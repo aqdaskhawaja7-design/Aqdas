@@ -1,0 +1,6 @@
+{
+  "name": "Mobile Notepad",
+  "description": "A clean, mobile-first notes app with quick note taking, search, checklists, and auto-save.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

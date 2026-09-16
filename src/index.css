@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+  }
+}
+
+@media print {
+  #notepad-titlebar,
+  #notepad-menubar,
+  #notepad-statusbar,
+  #notepad-find-replace-bar,
+  #notepad-toast {
+    display: none !important;
+  }
+
+  body, #root, #notepad-window, #notepad-editor-container {
+    height: auto !important;
+    overflow: visible !important;
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  textarea {
+    border: none !important;
+    resize: none !important;
+    overflow: visible !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    color: black !important;
+  }
+}
